@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
+
   const [eurot, setEurot] = useState('')
   const [kruunu, setKruunu] = useState(0)
 
@@ -10,7 +11,7 @@ export default function App() {
     const result = eurot.replace(',','.')*11.85
     setKruunu(result)
   }
-  
+  return
   (
     <View style={styles.container}>
       <Text>Eurot</Text>
